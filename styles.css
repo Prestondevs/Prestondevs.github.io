@@ -1,6 +1,7 @@
+
+
 @import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
 
-/* variables */
 :root {
   --bg: #0a0a0a;
   --text: #c8c8c8;
@@ -15,14 +16,12 @@
   --font: 'Share Tech Mono', 'Courier New', Courier, monospace;
 }
 
-/* reset */
 *, *::before, *::after {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
-/* body */
 body {
   background-color: var(--bg);
   color: var(--text);
@@ -32,17 +31,16 @@ body {
   min-height: 100vh;
 }
 
-/* container */
 .container {
-  max-width: 960px;
+  max-width: 780px;
   margin: 0 auto;
-  padding: 40px 20px 60px;
+  padding: 60px 20px 80px;
 }
 
-/* header */
+/* ---- Header / Title ---- */
 header {
   text-align: center;
-  margin-bottom: 24px;
+  margin-bottom: 40px;
 }
 
 h1 {
@@ -50,7 +48,6 @@ h1 {
   font-weight: 700;
   letter-spacing: 0.03em;
   line-height: 1.2;
-  font-family: Arial, sans-serif;
 }
 
 .title-orange {
@@ -63,15 +60,15 @@ h1 {
   text-shadow: 0 0 18px rgba(58, 184, 160, 0.45);
 }
 
-/* tagline */
+/* ---- Tagline ---- */
 .tagline {
   color: var(--text);
-  margin-bottom: 24px;
+  margin-bottom: 40px;
   font-size: 1rem;
-  max-width: 900px;
+  max-width: 680px;
 }
 
-/* posts */
+/* ---- Posts Section ---- */
 .posts h2 {
   font-size: 1rem;
   color: var(--heading);
@@ -81,7 +78,7 @@ h1 {
 
 .category {
   margin-left: 2rem;
-  margin-bottom: 14px;
+  margin-bottom: 24px;
 }
 
 .category h3 {
@@ -103,7 +100,6 @@ ul li {
   margin-bottom: 4px;
 }
 
-/* date */
 .date {
   color: var(--date);
   font-size: 0.95rem;
@@ -111,7 +107,6 @@ ul li {
   flex-shrink: 0;
 }
 
-/* links */
 a {
   color: var(--link);
   text-decoration: underline;
@@ -131,9 +126,9 @@ a:hover {
   font-size: 0.95rem;
 }
 
-/* footer */
+/* ---- Footer / RSS ---- */
 footer {
-  margin-top: 28px;
+  margin-top: 48px;
 }
 
 .rss {
