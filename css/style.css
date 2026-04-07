@@ -111,3 +111,68 @@ table.border-0 th, table.border-0 td {
 .border-0 {
 	border: none;
 }
+
+.project-list {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+.project-item {
+	margin-bottom: 4px;
+}
+
+.project-toggle {
+	background: none;
+	border: 1px solid lime;
+	color: lime;
+	font-family: 'Source Code Pro', monospace;
+	font-size: 12px;
+	cursor: pointer;
+	padding: 4px 8px;
+	width: 100%;
+	text-align: left;
+}
+
+.project-toggle:hover {
+	background: lime;
+	color: black;
+}
+
+.project-toggle::before {
+	content: '> ';
+}
+
+.project-toggle.open::before {
+	content: 'v ';
+}
+
+.project-readme {
+	display: none;
+	border: 1px solid lime;
+	border-top: none;
+	padding: 12px;
+	overflow-y: auto;
+	max-height: 320px;
+}
+
+.project-readme.open {
+	display: block;
+}
+
+.project-readme pre {
+	background: #111;
+	border: 1px solid lime;
+	padding: 8px;
+	overflow-x: auto;
+	white-space: pre-wrap;
+	word-break: break-word;
+}
+
+.project-readme code {
+	color: #0ff;
+}
+
+.project-readme ul {
+	padding-left: 20px;
+}
