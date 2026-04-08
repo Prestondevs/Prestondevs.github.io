@@ -2,6 +2,7 @@
 <html>
 <head>
 	<link rel="stylesheet" type="text/css" href="../css/style.css">
+	<script src="../scripts/dropdownreadme.js" defer></script>
 </head>
 <body>
 <div class="page">
@@ -9,47 +10,12 @@
 	<ul class="project-list">
 
 		<li class="project-item">
-			<button class="project-toggle" onclick="toggle(this)">iris_lang</button>
-			<div class="project-readme">
-				<h1>Iris Language Compiler</h1>
-				<p>Iris is a custom programming language and compiler that translates <code>.ir</code> source files into native x86-64 assembly and produces executable ELF binaries.</p>
-				<p><a href="https://github.com/Prestondevs/iris_lang" target="_blank">github.com/Prestondevs/iris_lang</a></p>
-
-				<h2>Overview</h2>
-				<p>This project implements a full compilation pipeline:</p>
-				<ul>
-					<li><code>.ir</code> source code → parsing → abstract syntax tree (AST)</li>
-					<li>AST → x86-64 assembly generation</li>
-					<li>Assembly → object file using GNU assembler (<code>as</code>)</li>
-					<li>Object file → executable via system linker</li>
-				</ul>
-				<p>The language includes a runtime system for handling basic data types (integers, floats, strings) and supports expressions, variables, and function calls.</p>
-
-				<h2>Features</h2>
-				<ul>
-					<li>Custom <code>.ir</code> language syntax</li>
-					<li>AST-based compilation</li>
-					<li>Direct x86-64 assembly code generation</li>
-					<li>Tagged value system for runtime type handling</li>
-					<li>Function support with parameter passing</li>
-					<li>Integration with GNU toolchain (<code>as</code>, <code>ld</code> / <code>gcc</code>)</li>
-					<li>Produces native ELF executables</li>
-				</ul>
-
-				<h2>Build</h2>
-				<p>Compile the compiler:</p>
-				<pre><code>g++ -std=c++17 -o iris main.cpp</code></pre>
-			</div>
+			<button class="project-toggle" data-src="projects/iris_lang.html" onclick="toggle(this)">iris_lang</button>
+			<div class="project-readme"></div>
 		</li>
 
 	</ul>
 </div>
-<script>
-	function toggle(btn) {
-		btn.classList.toggle('open');
-		var readme = btn.nextElementSibling;
-		readme.classList.toggle('open');
-	}
-</script>
+
 </body>
 </html>
